@@ -4,6 +4,7 @@ all:
 
 .PHONY: image
 image:
+	CADDY_VERSION=v2.6.4 \
 	docker build \
 		-t ghcr.io/batx-dev/caddy:2.6.4-bullseye \
 		-t ghcr.io/batx-dev/caddy:2.6-bullseye \
